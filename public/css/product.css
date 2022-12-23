@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@300;400;500;700;900&family=Open+Sans:wght@300;700;800&family=Quicksand:wght@300;400;500;700&family=Roboto:ital,wght@0,100;0,500;1,300&display=swap");
+@import url(./header.css);
+@import url(./footer.css);
+@import url(./responsive.css);
+@import url(./card.css);
+@import url(./cartSidebar.css);
+:root {
+  --primary: #ff4c4c;
+}
+li {
+  list-style-type: none;
+}
+h1 {
+  color: #8b572a;
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: 30px;
+  margin: 20px 0px 10px 10px;
+}
+.breadcrumb li {
+  font-size: 13px;
+  line-height: 1;
+}
+.banner-image img{
+  width: 100%;
+}
+.sort-name {
+  padding: 30px 0;
+}
+.sort-name label {
+  margin-right: 20px;
+}
+.icon-filter {
+  font-size: 15px;
+  line-height: 40px;
+  cursor: pointer;
+  display: none;
+  padding: 0;
+}
+.filter-title i {
+  margin: 4px;
+}
+.filter-header{
+  margin-top: 10px;
+}
+.filter-header button{
+  display: none;
+}
+.filter ul {
+  padding: 0;
+}
+.filter p {
+  border: 1px solid black;
+  padding: 10px 22px;
+  font-weight: 500;
+}
+.filter input {
+  margin-right: 10px;
+}
+.filter label {
+  margin: 10px 0;
+  font-weight: 700;
+}
+.filter-selected span {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary);
+}
+.filter-selected-title i {
+  font-size: 13px;
+}
+.filter-selected i {
+  color: var(--primary);
+}
+.filter-selected ul {
+  padding: 0;
+  list-style-type: none;
+}
+.sort-name ul {
+  display: flex;
+  justify-content: space-around;
+}
+.product-filter {
+}
+#overlay2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #111;
+  opacity: 0.4;
+  overflow: hidden;
+  z-index: 1000;
+  display: none;
+}
+.more-btn {
+  cursor: pointer;
+  border: 1px solid gray;
+  background-color: #8b572a;
+  color: white;
+  font-weight: 700;
+  width: 200px;
+  line-height: 40px;
+  margin: 80px auto;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  transition: 0.5s;
+  font-size: 12px;
+}
+.more-btn:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background-color: black;
+}
+.btn2:before {
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  transition: width 0.25s linear;
+}
+.btn2:hover:before {
+  width: 100%;
+}
+.btn2:hover a {
+  color: white;
+}
+.shop-paginate{
+  display: flex;
+  padding-top: 25px;
+  border-top: 1px solid #e8e8e8;
+  align-items: center;
+  justify-content: center;
+}
+
+.shop-paginate p{
+  color: #555555;
+  margin: 0;
+}
+
+.shop-paginate{
+  display: flex;
+}
+
+.pagination-item{
+  margin-left: 10px;
+  width: 30px;
+  cursor: pointer;
+  height: 30px;
+  display: block;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555555;
+}
+
+/* .pagination-item:hover{
+  background-color: grey;
+  color: #fff;
+} */
+
+.pagination-item-active{
+  background-color: grey;
+  color: #fff;
+}
+
+@media (max-width: 990px) {  
+  .filter ul {
+    margin-left: 10px;
+  }
+  .filter-header button{
+    display: block;
+  }
+  .icon-filter {
+    display: inline-block;
+    position: fixed;
+    z-index: 2;
+    top: 50%;
+    color: #fff;
+    background: #dc4e3f;
+    width: 40px;
+    text-align: center;
+    right: 0;
+  }
+  .product-filter {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100vh;
+    overflow: hidden;
+    background-color: white;
+    z-index: 10002;
+    flex-direction: column;
+    transition: all 0.3s;
+    padding: 0;
+    overflow-y: scroll;
+  }
+  .sort-title h1 {
+    display: none;
+  }
+  .filter p {
+    border: 0;
+    padding: 0 10px;
+    font-weight: 700;
+  }
+  .filter label {
+    font-weight: 400;
+  }
+  .filter-title {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  
+  .card-item {
+    margin-bottom: 40px;
+  }
+  .sort-name {
+    white-space: nowrap;
+    font-size: 15px;
+  }
+  .sort-name ul {
+    padding: 0 5px;
+  }
+}
+
+@media (max-width: 567px) {
+  
+  .sort-name p{
+    display: none;
+  }
+  .sort-name form{
+    display: none;
+  
+  }
+  .card-item .card-title h3{
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,179 @@
+.btn {
+    /* margin: 20px 10px 10px 0; */
+    cursor: pointer;
+    border: 1px solid gray;
+    border-radius: 0%;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    display: none;
+    transition: 0.5s all ease;
+    font-size: 12px;
+  }
+  
+  .btn:before {
+    content: "";
+    position: absolute;
+    z-index: -1; 
+    background-color: gray;
+  }
+  .btn--detail:before {
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    transition: all 0.25s linear;
+  }
+  .btn--detail:hover:before {
+    width: 100%;
+  }
+  .btn-icon {
+    cursor: pointer;
+    border: 1px solid gray;
+    border-radius: 0%;
+    color: white;
+    font-weight: 600;
+    background-color: #8b572a;
+    text-transform: uppercase;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    padding: 7px 4px;
+    z-index: 1;
+    transition: 0.5s all ease;
+    font-size: 11px;
+  }
+  .btn-icon:before{
+    content: "";
+    position: absolute;
+    z-index: -1; 
+    background-color: black;
+  }
+  .btn-add-to-cart:before {
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    transition: all 0.25s linear;
+  }
+  .btn-add-to-cart:hover:before {
+    width: 100%;
+  }
+  .card-item .btn--detail:hover a{
+    color: white;
+  }
+  .card-item:hover .btn{
+    display: inline-block;
+    margin: 10px auto;
+  }
+  .card-item:hover .card-title{
+    display: none;
+  }
+  .card h2:nth-child(1) {
+    color: #4a4a4a;
+    font-size: 24px;
+    font-weight: 700;
+  }
+ 
+  .flash-tag{
+    top:15px;
+    font-weight: 700;
+    left: 0;
+    z-index: 3;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #fff;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 10px;
+    background: #410099;
+  }
+  .card-item {
+    height: 100%;
+    /* margin-bottom: 40px; */
+    text-align: center;
+  }
+  .card-item:hover{}
+  .card-item .card-title h3 {
+    font-size: 15px;
+    font-weight: 500;
+    height: 30px;
+    margin-top: 10px;
+  }
+  .card-item .card-title p:nth-child(2) {
+    font-weight: 600;
+    font-size: 14px;
+    color: #252a2b;
+  }
+  .card-item:hover img{
+    transform: scale(1.1);
+  }
+  .card-title h3 {
+    display: block;
+    color: black;
+    font-weight: bold;
+    position: relative;
+  }
+  .card-image{
+    overflow: hidden;
+  }
+  .card-image img{
+    transition: all 0.3s ease-in-out;
+  }
+  /* /* .card-image {
+    position: relative;
+  }
+  .card-image img:last-child {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    left: 0;
+    transition: all 0.7s ease;
+    object-fit: cover;
+  }
+  .card-image img:last-child:hover {
+    opacity: 1;
+  } */
+  .card-item:hover .btn-detail {
+    visibility: visible;
+    opacity: 100;
+  } 
+  .card-image .social{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  .card-image .social li {
+    margin-bottom: 10px;
+    /* transform: translateX(100px); */
+    display: none;
+    transition: 0.5s all ;
+    
+  }
+  .card-item:hover .social li{
+    transition: 0.5s all ;
+    /* transform: translateX(0); */
+    display: block;
+  }
+  .card-image .social li button{
+    color: #666;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    line-height: 40px;
+    width: 30px;
+    display: block;
+    transition: 0.5s all ;
+  }
+  .card-image .social button:hover{
+    color: #fff;
+    background-color: #03aae8;
+  }
+ @media (max-width:576px) {
+  .card-image .social li button {
+    display: none;
+  }
+ }

@@ -1,0 +1,49 @@
+:root {
+    /* Sử dụng biến này để set max-width: var(--bs-maw); cho item */
+    --bs-maw: 200px;
+  }
+  
+  @media (max-width: 575.98px) {
+    .col-2_4 {
+      flex: 0 0 auto;
+      width: 20%;
+      padding: 0 calc(100vw / 10 - min(var(--bs-maw) / 2, 100vw / 10 - 12px));
+    }
+  }
+  
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .col-sm-2_4 {
+      flex: 0 0 auto;
+      width: 20%;
+      padding: 0 calc(54px - min(var(--bs-maw) / 2, 42px));
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .col-md-2_4 {
+      flex: 0 0 auto;
+      width: 20%;
+      padding: 0 calc(72px - min(var(--bs-maw) / 2, 60px));
+    }
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .col-lg-2_4 {
+      flex: 0 0 auto;
+      width: 20%;
+      padding: 0 calc(96px - min(var(--bs-maw) / 2, 84px));
+    }
+  }
+  @media (min-width: 1200px)  {
+    .col-xl-2_4 {
+      flex: 0 0 auto;
+      width: 20%;
+      padding: 0 calc(114px - min(var(--bs-maw) / 2, 102px));
+    }
+  }
+  @media (min-width: 1400px) {
+    .col-xxl-2_4 {
+      flex: 0 0 auto;
+      width: 20%;
+      padding: 0 calc(132px - min(var(--bs-maw) / 2, 120px));
+    }
+  }
+  /* and (max-width: 1399.98px) */

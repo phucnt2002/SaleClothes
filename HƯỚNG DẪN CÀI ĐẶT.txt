@@ -1,0 +1,12 @@
+*** Yêu cầu: Cài đặt XAMPP trên hệ điều hành
+--> Link download: https://www.apachefriends.org/download.html
+*** Hướng dẫn cài đặt:
+ + Giải nén Web.rar có chứa thư mục Web
+ + Copy thư mục Web ở trên và dán theo đường dẫn: C:\xampp\htdocs (mặc định)
+ + Mở XAMPP mục Actions start Apache và MySQL
+ + Truy cập đường dẫn http://localhost/phpmyadmin/ hoặc click Admin MySQL
+ + Thêm cơ sở dữ liệu là shop_quanao và import file shop_quanao.sql vào cơ sở dữ liệu vừa tạo
+ + Mở trình duyệt truy cập đường dẫn http://localhost/Web/
+ ---> Cài đặt thành công
+*** Tài khoản Admin: Admin_Chu
+    Password: 9999

@@ -1,0 +1,114 @@
+@media (max-width: 990px) {
+  .menu-icon {
+    display: inline-block;
+  }
+
+  
+  .navbar-nav .dropdown-menu {
+    position: static;
+    background-color: transparent;
+    border: none;
+  }
+  .menu ul {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    overflow: hidden;
+    background-color: white;
+    z-index: 10002;
+    flex-direction: column;
+    transition: all 0.3s;
+    padding: 0;
+  }
+  .menu ul li {
+    margin: 20px 0;
+    transition: all 0.5s;
+    margin-left: 0;
+  }
+  li a {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .menu ul li:nth-child(1) {
+    margin-top: 0;
+    background-image: url(https://file.hstatic.net/1000281824/file/z3533341732237_e9e4d9c68b5cb9dc1d58f4a75206653d_db990baa90a34c37b0365c9ee14fe71c.jpg)
+  }
+  .menu ul li:nth-child(2) {
+    background-image: url(https://file.hstatic.net/1000281824/file/z3533341777412_f5edd4a273a3ef5093b6567f1acd7b0f_1d288245ef874e9fab99f73c62539549.jpg);
+  }
+  .menu ul li:nth-child(3) {
+    background-image: url(https://file.hstatic.net/1000281824/file/z3533341550713_092bf74f5480db827be131b0c89aa215_2753e6d3b5744c92be5149c0cc122f7c.jpg);
+  }
+  .menu ul li:nth-child(4) {
+    background-image: url(https://file.hstatic.net/1000281824/file/z3533341677298_db51ad287d63951b60ac97056764ee9a_c472a182fc0f4463a587b270c6f169a4.jpg);
+  }
+  .menu {
+    font-size: 10px;
+  }
+  .dropdown-item{
+    padding: 0.25rem 0rem;
+  }
+  /* .dropdown-menu{
+    background-image: url(/Degrey-Website/img/li/li4.png);
+  } */
+  .menu .menu-icon i {
+  }
+  .menu-icon {
+    line-height: 15px;
+  }
+  .menu ul li:hover {
+    background-color: aliceblue;
+    color: aqua;
+  }
+  .image-item .image {
+    margin-top: 10px;
+  }
+  .image-mini .mini-item {
+    display: block;
+  }
+  #header .header-logo {
+    margin: 0 15px;
+  }
+}
+@media (max-width: 768px) {
+  
+  .footer-item {
+    margin-bottom: 50px;
+  }
+  .intro-content iframe {
+    height: 300px;
+  }
+  .card-item .card-title h3{
+    font-size: 12px;
+  }
+}
+@media (max-width: 580)  {
+  
+}
+@media (max-width: 567px) {
+  
+  .image .pc-tablet {
+    display: none;
+  }
+  .image .sp {
+    display: block;
+  }
+  .suggest-image img {
+    margin: 0 auto;
+  }
+  .intro-content iframe {
+    height: 250px;
+  }
+  .card-item .card-title h3{
+    font-size: 12px;
+  }
+  .btn.btn-add-to-cart{
+    width: 100%;
+    margin: 10px 0;
+  }
+  .card-item .social {
+    display: none;
+  }
+}

@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+i{/*  chỉnh icon ngôi sao */
+    font-size:16px;
+    text-align: center;
+    padding-right: 10px;
+}
+
+h2{/*  chỉnh ô chứa chữ H2 */
+text-align: center;
+font-size:23px; 
+padding-left:325px;/*  chỉnh khoảng cách 2 bên lề để song song với ảnh */
+padding-right:343px;
+padding-bottom:70px;
+padding-top:100px;
+}
+h1{
+    text-align: left;
+    font-size:20px; 
+    font-weight: 900;
+    padding-left:325px;/*  chỉnh khoảng cách 2 bên lề để song song với ảnh */
+    padding-right:343px;
+    margin-bottom:10px
+}
+h5{/*  chỉnh ô chứa chữ H5 */
+    text-align: left;
+    font-size:16px; 
+    font-weight: 50;
+    padding-left:325px;/*  chỉnh khoảng cách 2 bên lề để song song với ảnh */
+    padding-right:343px;
+    margin-bottom:-10px;
+    padding-bottom:20px;
+ }
+
+h6{/*  chỉnh ô chứa chữ H6 */
+    text-align: left;
+    font-size:17px; 
+    font-weight: 500;
+    padding-left:325px;/*  chỉnh khoảng cách 2 bên lề để song song với ảnh */
+    padding-right:343px;
+    text-decoration:underline;
+
+}
+h3{
+    text-align: left;
+    font-size:17px; 
+    font-weight: 100;
+    padding-left:325px;/*  chỉnh khoảng cách 2 bên lề để song song với ảnh */
+    padding-right:343px;
+    margin-top:10px;
+
+
+}
+.image{/*  chỉnh ảnh trong mục body */
+    align-items: center;
+    text-align: center;
+    margin-top:10px;
+    margin-bottom:20px;
+    margin-left:-120px;
+
+}
+/*  ------------------Table-------------------------------- */
+h1.chitiet{
+    
+    padding-top:60px;
+    padding-left:675px
+}
+
+table{
+    align-items: center;
+    text-align: center;
+    margin-left:325px;/*  chỉnh khoảng cách 2 bên lề để song song với ảnh */
+    margin-right:343px;
+    border-style: solid;
+    margin-bottom:70px
+    
+    
+}
+td{
+    font-size: 16px;
+    border-style: solid;
+  
+    
+}
+
+
+th{
+    font-weight:560;
+
+}
+
+
+
+
+
+/*-----------------BÀI VIẾT LIÊN QUAN--------------------------*/
+h1.bvlq{
+    text-align: left;
+    font-size:16px;
+    font-weight: 550;
+    padding-left:325px;/*  chỉnh khoảng cách 2 bên lề để song song với ảnh */
+    padding-right:343px;
+    padding-bottom:18px;
+    margin-top:15px;/*  chỉnh khoảng cách so với chữ bên trên */
+}
+hr{
+    margin-left:326px;
+    margin-top:180px
+}
+
+#list-new {/*  chỉnh ảnh bài viết liên quan */
+    font-size:10px;/*size chữ sản phẩm*/
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding-left:190px;/*  chỉnh khoảng cách 2 bên lề để song song với ảnh */
+    padding-right:317px;
+    margin-top:40px;
+
+}
+
+#list-new .item .name {/*  chỉnh chữ bài viết liên quan */
+    text-align: center;
+    color:rgb(10, 10, 10);
+    font-weight: bold;
+    margin-top:20px;/*chỉnh khoảng cách từ tên so với sản phẩm*/
+}
+
+
+#list-new .box-left{
+    text-align: center;
+    margin-top:435px;/*chỉnh lên xuống nút xem thêm */
+    margin-left:-480px;/*chỉnh trái phải nút xem thêm*/
+    
+}
+#list-new .box-left button:hover {/*màu sắc khi nhấp vô nút buttom mua ngay*/
+    background:orange;
+}
+#list-new .box-left button {/*nút buttom mua ngay*/
+    font-size:12px;/*chỉnh size chữ*/
+    width: 80px;/*chỉnh size dài bóng đen*/
+    height: 30px;/*chỉnh size rộng bóng đen*/
+    background:#1d1a1a;
+    border:none;
+    outline:none;
+    color:#fff;
+    font-weight: bold;
+    border-radius: 200px;
+    transition:0.4s;/*chỉnh tốc độ chuyển màu*/
+}
+
+
+
+
+/*----------------FOOTER--------------------*/
+
+footer{
+    background:rgb(0, 0, 0);
+    display:flex;
+    margin-top:60px;
+    justify-content: space-around;
+    margin-bottom:0px;
+    padding-bottom: 20px;   /*chỉnh size background đen */
+    
+}
+footer.col{
+    
+    display:flex;
+    flex-direction:column;
+    align-items: flex-start;
+    margin-top: 100p;
+}
+footer h4{   /*chỉnh size chữ H4*/
+    color:rgb(255, 255, 255);
+    font-size: 16px;
+    padding-bottom:30px;
+    margin-top:40px;
+    font-weight: bold;
+}
+footer p{  /*chỉnh size chữ P*/
+    color:rgb(255, 255, 255);
+    font-size: 13px;
+    text-decoration:none;
+    margin-bottom:15px;
+
+ 
+}
+footer li i{ /*chỉnh icon fb,instagram,youtube*/
+    color:#fff;
+    margin-top: 3px;
+    font-weight: bold;
+    margin-left: -20px;
+    padding-top:6px/*chỉnh lại vị trí trên dưới của icon trong FOOTER*/
+   
+}

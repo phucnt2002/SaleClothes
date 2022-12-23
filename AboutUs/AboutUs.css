@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{/*  chỉnh bố cục ảnh và background sau nó */
+    min-height: 100vh;
+    background:rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gallery-display-area{
+    overflow: hidden;
+    height: 360px;
+    width: 1080px;
+    
+}
+
+.gallery-wrap{
+    animation: slideShow 16s infinite;
+    
+}
+
+.image{
+    float: left;
+    height: 360px;
+    width: 1080px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@keyframes slideShow{
+    20%{
+        margin-left: 0;        
+    }
+    30%{
+        margin-left: -100%;        
+    }
+    40%{
+        margin-left: -100%;        
+    }
+    50%{
+        margin-left: -200%;        
+    }
+    60%{
+        margin-left: -200%;        
+    }
+    70%{
+        margin-left: -300%;        
+    }
+    80%{
+        margin-left: -300%;        
+    }
+    90%{
+        margin-left: -400%;        
+    }
+    100%{
+        margin-left: -400%;        
+    }
+}
+h5{/*  chỉnh  ô chứa chữ H4 */
+    font-size:16.6px;
+    color:rgb(0, 0, 0);
+    text-align:center;
+    padding-left:395px;
+    padding-right:395px;
+    letter-spacing:0.5px;
+    line-height:40px;
+    font-weight:500;
+    padding-bottom:70px;
+    
+    
+}
+h2{/*  chỉnh ô chứa chữ H2 */
+   text-align: center;
+  padding:80px;
+  font-size:25px;
+  margin-top:-200px
+  
+}
+/*----------------FOOTER--------------------*/
+
+footer{
+    background:rgb(0, 0, 0);
+    display:flex;
+    margin-top:0px;
+    justify-content: space-around;
+    margin-bottom:0px;
+    padding-bottom: 20px;   /*chỉnh size background đen */
+    
+}
+footer.col{
+    
+    display:flex;
+    flex-direction:column;
+    align-items: flex-start;
+    margin-top: 100p;
+}
+footer h4{   /*chỉnh size chữ H4*/
+    color:rgb(255, 255, 255);
+    font-size: 16px;
+    padding-bottom:30px;
+    margin-top:40px;
+    font-weight: bold;
+}
+footer p{  /*chỉnh size chữ P*/
+    color:rgb(255, 255, 255);
+    font-size: 13px;
+    text-decoration:none;
+    margin-bottom:15px;
+
+ 
+}
+footer li i{ /*chỉnh icon fb,instagram,youtube*/
+    color:#fff;
+    margin-top: 3px;
+    font-weight: bold;
+    margin-left: -20px;
+    padding-top:6px/*chỉnh lại vị trí trên dưới của icon trong FOOTER*/
+   
+}
+@media screen and  (max-width: 870px)  and (min-width:300px){
+    body {
+   width: 1800px;
+    }

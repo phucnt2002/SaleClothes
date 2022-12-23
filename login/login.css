@@ -1,0 +1,10 @@
+#wrapper {
+    float: left;
+    margin-top: 100px;
+    width: 100%;
+    
+    position: fixed
+}
+h1 {
+    font-weight: 600;
+}

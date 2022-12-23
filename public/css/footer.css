@@ -1,0 +1,31 @@
+.footer-content h3 {
+    font-weight: 700;
+    font-size: 18px;
+    padding-bottom: 12px;
+  }
+  .footer-content ul {
+    padding: 0px;
+    list-style-type: none;
+  }
+  .contact-icon i {
+    margin-right: 10px;
+    font-size: 30px;
+  }
+  .footer-phone {
+    padding: 20px 0;
+  }
+  .phone-number {
+    padding: 10px;
+  }
+  .phone-icon {
+    font-size: 30px;
+  }
+  .phone-number p {
+    font-size: 24px;
+    color: #333333;
+    font-weight: 500;
+    line-height: 0;
+  }
+  .end p {
+    text-align: center;
+  }

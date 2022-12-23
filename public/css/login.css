@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@300;400;500;700;900&family=Open+Sans:wght@300;700;800&family=Quicksand:wght@300;400;500;700&family=Roboto:ital,wght@0,100;0,500;1,300&display=swap");
+@import url(./header.css);
+@import url(./footer.css);
+body {
+  font-family: "Quicksand", sans-serif;
+}
+.login-title h1 {
+  color: #8b572a;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+:root {
+  --bg--color: #006778;
+  --primary--color: #fff;
+  --secondary--color: #a4ebf3;
+  --gray--color: #aaaaaa;
+}
+.sign-in {
+  text-align: center;
+}
+.wapper {
+  margin: auto;
+  width: 450px;
+  background-color: var(--primary--color);
+}
+.wapper-heading h1 {
+  color: #8b572a;
+  font-size: 24px;
+}
+.wapper input {
+  padding-left: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 45px;
+  border: none;
+  outline: none;
+  background-color: #d9d9d9;
+}
+.wapper a{
+  font-weight: 700;
+  border-bottom: 1px solid;
+}
+
+.wapper input:focus {
+  border: 1px solid var(--bg--color);
+}
+.wapper input::placeholder {
+  color: gray;
+}
+
+
+.btn {
+    cursor: pointer;
+    border: 1px solid gray;
+    background-color: #8b572a;
+    color: white;
+    font-weight: 700;
+    width: 150px;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+    font-size: 12px;
+    margin-left: 85px;
+  }
+  .btn:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-color: black;
+  }
+  .btn-login:before {
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    transition: width 0.25s linear;
+  }
+  .btn-login:hover:before {
+    width: 100%;
+  }
+  .btn-logint a {
+    color: white;
+  }
+  .btn-login:hover a {
+    color: white;
+  }

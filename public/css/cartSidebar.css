@@ -1,0 +1,32 @@
+.product-item-sidebar .row > *{
+    padding: 0;
+  }
+  .name-product h2{
+    text-align: center;
+    font-size: 11px;
+    width: 180px
+  }
+  
+  .count-sidebar {
+    margin: 14px 0;
+  }
+  .cart-info{
+    background-color: #fff;
+    padding: 4vh 5vh;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+  }
+  .product-item .image img {
+    height: 154px;
+    object-fit: cover;
+  }
+  .product-item-sidebar .image img{
+    height: 110px;
+    object-fit: cover;
+  }
+  .product-item-sidebar .info{
+    width: 63%;
+  }
+  .minus-sidebar, .plus-sidebar {
+    cursor: pointer;
+  }
