@@ -1,9 +1,9 @@
 <?php
-            session_start();
-            if(isset($_GET['dangxuat'])&&$_GET['dangxuat']==1){
-                unset($_SESSION['submit']);
-                header('Location:index.php');
-            }
+    session_start();
+    if(isset($_GET['dangxuat'])&&$_GET['dangxuat']==1){
+        unset($_SESSION['submit']);
+        header('Location:index.php');
+    }
 ?>
 <?php
 require_once('database/dbhelper.php');
@@ -27,6 +27,19 @@ if (count($idList) > 0) {
 } else {
     $cartList = [];
 }
+
+
+
+if(isset($_POST['dathang'])){
+    require_once('mail/sendmail.php');
+    $fullname = $_POST['fullname'];
+    $email = $_POST['email'];
+    $phone_number = $_POST['phone_number'];
+    $address = $_POST['address'];
+    $mail = new Mailer();
+    $mail->dathangmail($fullname, $email, $phone_number, $address, $cartList, $cart);
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -335,7 +348,6 @@ if (count($idList) > 0) {
                                     </thead>
                                     <tbody>
                                         <?php
-                                         
                                         $count = 0;
                                         $total = 0;
                                         foreach ($cartList as $item) {
@@ -363,7 +375,9 @@ if (count($idList) > 0) {
                                     </tbody>
                                 </table>
                                 <p>Tổng đơn hàng: <span class="bold red"><?= number_format($total, 0, ',', '.') ?><span> VNĐ</span></span></p>
-                                <a href="dashboard.php"><button class="btn btn-success">Đặt hàng</button></a>
+                                <form method="post">
+                                <a href="dashboard.php"><button class="btn btn-success" type="dathang" name ="dathang">Đặt hàng</button></a>
+                                </form>
                             </div>
                         </div>
 

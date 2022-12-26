@@ -22,7 +22,7 @@
     <link rel="shortcut icon" type="image/png" href="/Web/admin/product/uploads/avt.png"/>
   <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script><!--link lấy icon -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <title>Dirty Coin</title>
+    <title>Degrey</title>
 </head>
 <!-----------------------HEARDER ----------------------------------------->
 <header>
