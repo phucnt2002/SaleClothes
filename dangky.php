@@ -313,7 +313,7 @@
           </div>
           <div class="input-box">
             <span class="details">Mật khẩu</span>
-            <input type="text" name="matkhau" placeholder="Enter your password" required>
+            <input type="password" name="matkhau" placeholder="Enter your password" required>
           </div>
           <div class="input-box">
             <span class="details">Địa chỉ</span>

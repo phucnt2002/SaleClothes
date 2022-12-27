@@ -10,10 +10,10 @@ if (!empty($_POST)) {
 
 		switch ($action) {
 			case 'delete':
-				if (isset($_POST['id_user'])) {
-					$id = $_POST['id_user'];
+				if (isset($_POST['id_dangky'])) {
+					$id = $_POST['id_dangky'];
 
-					$sql = 'delete from user where id_user = '.$id;
+					$sql = 'delete from tbl_dangky where id_dangky = '.$id;
 					execute($sql);
 				}
 				break;

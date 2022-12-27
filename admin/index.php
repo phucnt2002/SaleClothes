@@ -74,7 +74,7 @@ header("content-type:text/html; charset=UTF-8");
                             $result = mysqli_query($conn, $sql);
                             echo '<span>' . mysqli_num_rows($result) . '</span>';
                             ?>
-                            <p><a href="">xem chi tiết➜</a></p>
+                            <p><a href="customer/">xem chi tiết➜</a></p>
                         </div>
                         <div class="sp dm">
                             <p>Danh mục</p>

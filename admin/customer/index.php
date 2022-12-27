@@ -80,7 +80,7 @@ require_once('../database/dbhelper.php');
                         }
                         $limit = 5;
                         $start = ($page - 1) * $limit;
-                        $sql = "SELECT * FROM user limit $start,$limit";
+                        $sql = "SELECT * FROM tbl_dangky limit $start,$limit";
                         executeResult($sql);
                         // $sql = 'select * from product limit $star,$limit';
                         $productList = executeResult($sql);
@@ -89,13 +89,13 @@ require_once('../database/dbhelper.php');
                         foreach ($productList as $item) {
                             echo '  <tr>
                     <td>' . ($index++) . '</td>
-                    <td>' . $item['hoten'] . '</td>
-                    <td>' . $item['username'] .'</td>
-                    <td>' . $item['password'] . '</td>
-                    <td>' . $item['phone'] . '</td>
+                    <td>' . $item['tenkhachhang'] . '</td>
+                    <td>' . $item['tendangnhap'] .'</td>
                     <td>' . $item['email'] . '</td>
+                    <td>' . $item['diachi'] . '</td>
+                    <td>' . $item['dienthoai'] . '</td>
                     <td>            
-                    <button class="btn btn-danger" onclick="deleteCustomer(' . $item['id_user'] . ')">Xoá</button>
+                    <button class="btn btn-danger" onclick="deleteCustomer(' . $item['id_dangky'] . ')">Xoá</button>
                     </td>
                 </tr>';
                         }
@@ -112,6 +112,7 @@ require_once('../database/dbhelper.php');
             $sql = "SELECT * FROM `user`";
             $conn = mysqli_connect(HOST, USERNAME, PASSWORD, DATABASE);
             $result = mysqli_query($conn, $sql);
+            $current_page = 0;
             if (mysqli_num_rows($result)) {
                 $numrow = mysqli_num_rows($result);
                 $current_page = ceil($numrow / 5);
@@ -144,7 +145,7 @@ require_once('../database/dbhelper.php');
             console.log(id)
             //ajax - lenh post
             $.post('ajax.php', {
-                'id_user': id,
+                'id_dangky': id,
                 'action': 'delete'
             }, function(data) {
                 location.reload()
